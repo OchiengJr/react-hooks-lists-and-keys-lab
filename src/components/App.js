@@ -6,12 +6,14 @@ import ProjectList from "./ProjectList";
 import user from "../data/user";
 
 function App() {
+  const { name, city, color, bio, links, projects } = user;
+
   return (
     <div>
       <NavBar />
-      <Home username={user.name} city={user.city} color={user.color} />
-      <About bio={user.bio} links={user.links} />
-      <ProjectList projects={user.projects} />
+      <Home username={name} city={city} color={color} />
+      <About bio={bio} links={links} />
+      <ProjectList projects={projects} />
     </div>
   );
 }

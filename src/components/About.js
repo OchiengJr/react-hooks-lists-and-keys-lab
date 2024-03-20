@@ -5,8 +5,8 @@ function About({ bio, links }) {
   return (
     <div id="about">
       <h2>About Me</h2>
-      {bio && bio.length > 1 ? <p>{bio}</p> : null}
-      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
+      {bio && bio.length > 1 && <p>{bio}</p>}
+      <img src="https://i.imgur.com/mV8PQxj.gif" alt="Animation: I made this" />
       <Links github={links.github} linkedin={links.linkedin} />
     </div>
   );

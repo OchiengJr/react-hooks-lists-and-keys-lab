@@ -1,3 +1,7 @@
+/* Normalize CSS */
+/* Add here */
+
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +27,7 @@ p {
   margin-bottom: 1em;
 }
 
+/* Navigation styles */
 nav {
   position: fixed;
   top: 0;
@@ -47,12 +52,7 @@ nav a:active {
   border-bottom: 2px solid tomato;
 }
 
-#home {
-  height: 50vh;
-  min-height: 400px;
-  background-color: cornsilk;
-}
-
+/* Section styles */
 #home,
 #about,
 #projects {
@@ -64,6 +64,18 @@ nav a:active {
   padding: 1rem;
 }
 
+#home {
+  height: 50vh;
+  min-height: 400px;
+  background-color: cornsilk;
+}
+
+#projects {
+  background-color: cornsilk;
+  min-height: 400px;
+}
+
+/* About section styles */
 #about img {
   max-height: 50%;
 }
@@ -72,11 +84,7 @@ nav a:active {
   display: block;
 }
 
-#projects {
-  background-color: cornsilk;
-  min-height: 400px;
-}
-
+/* Project list styles */
 #project-list {
   display: flex;
   justify-content: center;
@@ -99,6 +107,7 @@ nav a:active {
   display: inline-block;
 }
 
+/* Responsive design */
 @media (min-width: 700px) {
   #project-list {
     flex-direction: row;
